@@ -1,0 +1,5 @@
+vite.config.js
+src/*
+!dist/*
+node_modules
+example
