@@ -1,7 +1,3 @@
-Here’s a clean and professional `README.md` for your emoji + icon React SVG component library, **Glyphwave**:
-
----
-
 ````markdown
 # 🌊 Glyphwave
 
