@@ -127,7 +127,7 @@ PRs are welcome! Add new icons/emojis or improve performance/styling. See the [C
 
 ## 🔗 Links
 
-* [GitHub Repo](https://github.com/yourusername/glyphwave)
+* [GitHub Repo](https://github.com/ssarkar551/Glyphwave)
 * [NPM Package](https://www.npmjs.com/package/glyphwave)
 
 ---
