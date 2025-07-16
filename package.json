@@ -1,15 +1,15 @@
 {
 	"name": "glyphwave",
 	"private": false,
-	"version": "0.2.0",
+	"version": "0.4.0",
   "files": ["dist"],
 	"type": "module",
 	"main": "dist/emoji-icon-lib.cjs.js",
 	"module": "dist/emoji-icon-lib.es.js",
 	"exports": {
 		".": {
-			"import": "./dist/index.mjs",
-			"require": "./dist/index.cjs"
+			"import": "./dist/emoji-icon-lib.cjs.js",
+			"require": "./dist/emoji-icon-lib.es.js"
 		}
 	},
 	"scripts": {

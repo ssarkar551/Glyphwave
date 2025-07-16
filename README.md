@@ -1,4 +1,4 @@
-````markdown
+
 # 🌊 Glyphwave
 
 **Glyphwave** is a lightweight, tree-shakable React component library for SVG-based **icons** and **emojis**. Designed to be easy to use, customize, and scale in modern React applications.
