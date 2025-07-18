@@ -1,7 +1,8 @@
 {
 	"name": "glyphwave",
 	"private": false,
-	"version": "0.4.3",
+  "license": "MIT",
+	"version": "0.4.4",
   "files": ["dist"],
 	"type": "module",
 	"main": "dist/emoji-icon-lib.cjs.js",
