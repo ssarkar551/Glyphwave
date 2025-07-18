@@ -12,3 +12,4 @@ createRoot(document.getElementById('root')).render(
 export { default as ThumbsUp } from './emojis/Thumbsup';
 export { default as Fire } from './emojis/Fire';
 export { default as Heart } from './emojis/Heart';
+export { default as Eyes } from './emojis/Eyes';
