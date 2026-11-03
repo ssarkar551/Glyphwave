@@ -6,9 +6,9 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: 'src/main.jsx',
+    entry: 'src/index.js',
       name: 'EmojiIconLib',
-      fileName: (format) => `emoji-icon-lib.${format}.js`,
+      fileName: (format) => format === 'cjs' ? 'emoji-icon-lib.cjs' : 'emoji-icon-lib.es.js',
       formats: ['es', 'cjs'],
     },
     rollupOptions: {

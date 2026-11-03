@@ -1,139 +1,95 @@
+# Glyphwave
 
-# 🌊 Glyphwave
+Glyphwave is a lightweight React component library for expressive SVG emoji and UI symbols. Every component is tree-shakable, accepts standard SVG props, and works with modern React applications.
 
-**Glyphwave** is a lightweight, tree-shakable React component library for SVG-based **icons** and **emojis**. Designed to be easy to use, customize, and scale in modern React applications.
+## Why Glyphwave?
 
----
+- Inline SVG with no image or font dependencies
+- Customizable size, color, className, accessibility labels, and SVG attributes
+- ESM and CommonJS builds
+- TypeScript declarations included
+- MIT licensed for personal and commercial projects
 
-## 🚀 Features
-
-- ⚡ Pure SVG components – no font or image dependencies
-- 📦 Tree-shakable – import only what you use
-- 🎨 Fully customizable via props (color, size, className, etc.)
-- ♿ Accessible and semantic
-- 🧩 Works out of the box with Vite, Webpack, Next.js, etc.
-
----
-
-## 📦 Installation
+## Install
 
 ```bash
 npm install glyphwave
-````
-
-or
-
-```bash
-yarn add glyphwave
 ```
 
----
-
-## 🔧 Usage
+## Quick start
 
 ```jsx
-import { ThumbsUp, Fire } from 'glyphwave';
+import { Fire, Rocket, Sparkles } from 'glyphwave'
 
-function App() {
+export function ProductStatus() {
   return (
     <div>
-      <ThumbsUp style={{ fontSize: 32 }} />
-      <Fire width={32} height={32} fill="orange" />
+      <Sparkles width={32} fill="#a78bfa" aria-label="New" />
+      <Fire width={32} fill="#f97316" aria-label="Trending" />
+      <Rocket width={32} fill="#38bdf8" aria-label="Launching" />
     </div>
-  );
+  )
 }
 ```
 
-Each icon/emoji is exported as a self-contained React component.
+Every component accepts `SVGProps<SVGSVGElement>`, including `width`, `height`, `fill`, `stroke`, `className`, `style`, `aria-label`, and `role`.
 
----
+## Component catalog
 
-## 🧑‍💻 Component Props
+### Reactions and expressions
 
-Each component supports all valid `<svg>` props:
+`ThumbsUp` · `Heart` · `Fire` · `Eyes` · `Disappointed` · `Laughing` · `Sad` · `Clap`
 
-* `width`, `height`
-* `fill`, `stroke`
-* `className`, `style`
-* `aria-label`, `role`
+### Product and status symbols
 
-Example:
+`Sparkles` · `Rocket` · `PartyPopper` · `Check` · `X` · `Warning` · `Star`
 
-```jsx
-<ThumbsUp width={48} fill="blue" aria-label="thumbs up" />
-```
-
----
-
-## 📁 Importing Only What You Need (Tree-Shaking)
+Import only the components you need:
 
 ```jsx
-import { Fire } from 'glyphwave';
+import { Check } from 'glyphwave'
 ```
 
-> Only the `Fire` component will be included in your bundle.
+## Accessibility
 
----
+Components provide a default accessible label and `role="img"`. Supply a more specific `aria-label` when the icon meaning depends on context, or use the icon as decoration with `aria-hidden="true"`.
 
-## 📚 List of Icons and Emojis
-
-Coming soon in the documentation site!
-
----
-
-## 🛠️ Development
-
-Clone the repo and build:
+## Development
 
 ```bash
-git clone https://github.com/yourusername/glyphwave.git
-cd glyphwave
+git clone https://github.com/ssarkar551/Glyphwave.git
+cd Glyphwave
 npm install
-npm run build
+npm run check
 ```
 
-Link it locally to another React project:
+`npm run check` runs ESLint, builds the package, and verifies ESM/CJS exports plus the declaration file.
+
+The interactive catalog is available during development through the Vite dev server:
 
 ```bash
-npm link
-# In your other project:
-npm link glyphwave
+npm run dev
 ```
 
----
-
-## 📤 Publishing
-
-Ensure the build outputs (`dist/`) and entry fields in `package.json` are correct:
+## Release
 
 ```bash
-npm run build
+npm run check
 npm publish --access public
 ```
 
----
+The package exposes `index.d.ts`, an ESM build, and a CommonJS build. Keep the component catalog and README in sync when adding icons.
 
-## 📃 License
+## Contributing
 
-MIT — free for personal and commercial use.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for component conventions, accessibility expectations, and pull request guidance.
 
----
+## Links
 
-## 🙌 Contributions
+- [Interactive demo](https://github.com/ssarkar551/Glyphwave)
+- [GitHub repository](https://github.com/ssarkar551/Glyphwave)
+- [npm package](https://www.npmjs.com/package/glyphwave)
 
-PRs are welcome! Add new icons/emojis or improve performance/styling. See the [CONTRIBUTING.md](CONTRIBUTING.md) (coming soon) for guidelines.
+## License
 
----
-
-## 🔗 Links
-
-* [GitHub Repo](https://github.com/ssarkar551/Glyphwave)
-* [NPM Package](https://www.npmjs.com/package/glyphwave)
-
----
-
-```
-
----
-
-
+MIT

@@ -1,20 +1,24 @@
 {
 	"name": "glyphwave",
 	"private": false,
-  "license": "MIT",
+  	"license": "MIT",
 	"version": "0.4.5",
-  "files": ["dist"],
+	"files": ["dist", "index.d.ts"],
+	"types": "index.d.ts",
 	"type": "module",
-	"main": "dist/emoji-icon-lib.cjs.js",
+	"main": "dist/emoji-icon-lib.cjs",
 	"module": "dist/emoji-icon-lib.es.js",
 	"exports": {
 		".": {
-			"import": "./dist/emoji-icon-lib.cjs.js",
-			"require": "./dist/emoji-icon-lib.es.js"
+			"import": "./dist/emoji-icon-lib.es.js",
+			"require": "./dist/emoji-icon-lib.cjs"
 		}
 	},
 	"scripts": {
-		"build": "vite build"
+		"build": "vite build",
+		"lint": "eslint .",
+		"test:smoke": "node scripts/smoke-test.mjs",
+		"check": "npm run lint && npm run build && npm run test:smoke"
 	},
 	"dependencies": {
 		"react": "^19.1.0",
