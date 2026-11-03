@@ -4,7 +4,7 @@ const Disappointed = ({ width = 64, height = 32, ...props }) => (
 		width={width}
 		height={height}
 		viewBox="0 0 64 32"
-		aria-label="disappinted-face"
+		aria-label="disappointed-face"
 		role="img"
 		{...props}
 	>
